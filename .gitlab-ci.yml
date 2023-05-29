@@ -1,0 +1,40 @@
+stages:
+  - deploy
+
+
+default:
+  before_script:
+    - npm install
+
+cache:
+  paths:
+    - node_modules
+
+
+deploy_to_dev:
+  stage: deploy
+  only:
+    - dev
+  environment:
+    name: dev
+    url: https://"dev.consultida.com"/
+  script:
+    - echo "${ENV_DEV}"
+    - echo "${ENV_DEV}" > .env
+    - npm run build
+    - rsync -avr ./ consultida@127.0.0.1:/var/www/dev-front.consultida.com
+    - sudo systemctl restart consultida-dev-front
+
+deploy_to_main:
+  stage: deploy
+  only:
+    - main
+  environment:
+    name: main
+    url: https://"consultida.com"/
+  script:
+    - echo "${ENV_PROD}"
+    - echo "${ENV_PROD}" > .env    
+    - npm run build
+    - rsync -avr ./ consultida@127.0.0.1:/var/www/consultida.com
+    - sudo systemctl restart consultida-front   

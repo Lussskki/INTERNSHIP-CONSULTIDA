@@ -1,0 +1,269 @@
+.react-calendar {
+  @media (max-width: 1024px) {
+    width: 100% !important;
+  }
+}
+.StripeElement {
+  @media (max-width: 1024px) {
+    max-width: 100%;
+  }
+}
+.CookieConsent {
+  width: 100%;
+  font-size: 16px;
+  justify-content: unset !important;
+  background: #333333 !important;
+  border-top: 1px solid #5F5F5F !important;
+  flex-wrap: nowrap !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  padding-bottom: 30px;
+  color: #C4C4C4 !important;
+}
+
+.cookies-consent-buttons-wrapper {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  padding-right: 20px;
+  justify-content: flex-end;
+  width: unset !important;
+
+  button {
+    font-weight: 700 !important;
+    padding: 10px 30px !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    text-align: center !important;
+    background: transparent !important;
+    border: 1px solid #8789BF !important;
+    color: #8789BF !important;
+    margin: 0px !important;
+  }
+
+}
+
+.cookies-consent-content {
+  margin: 0px !important;
+  flex: auto !important;
+  padding-left: 20px !important;
+
+  a {
+    color: white;
+  }
+}
+
+#rcc-confirm-button {
+  margin-top: 0px !important;
+
+  @media (max-width: 1024px) {
+    margin-top: 15px;
+  }
+}
+
+.primary-hover :hover {
+  path {
+    fill: #8789bf;
+    fill-opacity: 1;
+  }
+}
+
+.footer-border {
+  @media (max-width: 768px) {
+    border-top: 1px solid #c4c4c4;
+  }
+}
+
+.consultant-border {
+  border: 1px solid #e0dcd8;
+
+  &:hover {
+    border: 1px solid #8789bf;
+  }
+}
+
+.consultant-image-border img {
+  border: 4px solid #8789bf !important;
+
+  @media (max-width: 1024px) {
+    border: 2px solid #5F5F5F !important;
+  }
+}
+
+.webinar-booking-image-border img {
+  border: 2px solid #8789bf !important;
+}
+
+.consultant-image img {
+  border: 4px solid #8789bf !important;
+}
+
+.webinar-consultant-image-border {
+  border: 2px solid #8789bf;
+}
+
+.custom-container-footer {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin: none;
+    padding: 16px 20px;
+  }
+}
+
+.custom-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.booking-container {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding: 100px 0px;
+  flex-direction: unset;
+  justify-content: space-between;
+}
+
+.faq-container {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.new-webinar-item {
+  border: 1px solid #E0DCD8;
+
+  &:hover {
+    border: 1px solid #8789BF;
+
+    button {
+      background-color: white;
+      color: #8789BF;
+    }
+
+    .info-container {
+      background-color: #8789bf;
+    }
+
+    h1,
+    h2,
+    span,
+    p {
+      color: white;
+    }
+  }
+}
+
+.consultant-item {
+  &:hover {
+    img {
+      opacity: 1;
+    }
+
+    .info-container {
+      background-color: #8789bf;
+
+      h3 {
+        color: white;
+      }
+    }
+  }
+}
+
+.info-item {
+  @media (max-width: 1024px) {
+    svg {
+      width: 300px;
+    }
+  }
+}
+
+.custom-dot-list-style {
+  margin-top: 40px !important;
+}
+
+.list-box-border {
+  border: 0.5px solid #C4C4C4;
+}
+
+.dashed-border {
+  border-top: 1px dashed #5F5F5F;
+}
+
+.table-border {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.2);
+}
+
+.full-table-border {
+  border: 1px solid rgba(196, 196, 196, 0.2);
+}
+
+.table-border-right {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.2);
+  border-right: 1px solid rgba(196, 196, 196, 0.2);
+}
+.custom-obj-position {
+  object-position: 20% 20%;
+}
+.main-banner-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    @media (max-width: 1024px) {
+    object-position: right;
+    }
+}
+.webinar-banner-image { 
+  width: 100%;
+  height: 300px;
+  @media (max-width: 1024px) {
+    height: 137px;
+  }
+  object-fit: cover;
+  object-position: center;
+}
+.home-second-banner{
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  object-position: bottom;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.currency {
+  &:hover{
+    svg {
+      path {
+        fill:#8789BF;
+      }
+    }
+  }
+}
+
+.lang-dropdown {
+  background: #FAFAFA;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mob-footer-text {
+
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+
+  color: #333333 !important;
+}
+.file-bottom-border {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.2);
+}

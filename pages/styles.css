@@ -1,0 +1,237 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BPGArial";
+  src: url("/fonts/Geo/BPGArial.ttf");
+  line-height: 20px;
+}
+@font-face {
+  font-family: "BPGArialCaps";
+  src: url("/fonts/Geo/BPGArialCaps.ttf");
+  line-height: 18px;
+}
+@font-face {
+  font-family: "BPGExcelsior";
+  src: url("/fonts/Geo/BPGExcelsior.ttf");
+  line-height: 55px;
+}
+
+@font-face {
+  font-family: "Rosario";
+  src: url("/fonts/Eng/Rosario.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Eng/Roboto.ttf");
+}
+
+.ka {
+  font-family: "BPGArial" !important;
+}
+.ka-caps {
+  font-family: "BPGArialCaps" !important;
+}
+.ka-excelsior {
+  font-family: "BPGExcelsior" !important;
+}
+.en-Roboto {
+  font-family: "Roboto" !important;
+}
+.en-Rosario {
+  font-family: "Rosario" !important;
+}
+.st-last {
+  display: flex;
+}
+.star-rating .on {
+  color: #FFE601;
+}
+.star-rating .off {
+  color: #ccc;
+}
+.ratingButton span {
+  font-size: 1.5rem;
+}
+body {
+  font-family: "Roboto";
+}
+
+.login:hover path {
+  stroke: #333;
+}
+.login:hover,
+.login:active,
+.login:focus {
+  border: none;
+}
+html {
+  height: 100%;
+}
+
+.shadow-main-slider {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.container-loader {
+  height: 15px;
+  width: 105px;
+  display: flex;
+  position: relative;
+}
+
+.container-loader .circle-loader {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #8789bf;
+  animation: move 500ms linear 0ms infinite;
+  margin-right: 30px;
+}
+.circle-loader:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: grow 500ms linear 0ms infinite;
+}
+
+.circle-loader:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  animation: grow 500ms linear 0s infinite reverse;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}
+.innerHtmlText h3 + p {
+  margin: revert;
+}
+.innerHtmlText p {
+  margin: revert;
+}
+.innerHtmlText p:first-child{
+  margin-top: 0;
+}
+.react-calendar {
+  border: none !important;
+  @apply shadow-xl;
+  flex-shrink: 0;
+}
+
+.react-calendar__tile--active {
+  background: #3c64b1 !important;
+  @apply bg-primary;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none !important;
+}
+
+.react-calendar__tile {
+  @apply transition-all rounded-box;
+}
+
+.react-calendar__tile:disabled {
+  opacity: 0.2;
+}
+.react-calendar__tile:active {
+  @apply scale-90;
+}
+
+.react-calendar__tile--now:not(.date-available-highlight) abbr {
+  color: black !important;
+}
+
+.date-available-highlight abbr {
+  @apply text-green-500;
+}
+.date-available-highlight {
+  @apply shadow-sm;
+}
+
+.react-calendar__tile--active:not(.date-available-highlight) abbr {
+  color: white !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: inherit !important;
+}
+
+.error-drp-1 > div:nth-child(1) .dropdown-wrapper {
+  @apply ring-red-500 ring-offset-2 ring-opacity-100 ring-2;
+}
+
+.error-drp-2 > div:nth-child(2) .dropdown-wrapper {
+  @apply ring-red-500 ring-offset-2 ring-opacity-100 ring-2;
+}
+
+.error-drp-3 > div:nth-child(3) .dropdown-wrapper {
+  @apply ring-red-500 ring-offset-2 ring-opacity-100 ring-2;
+}
+
+.fancy-progress-consultida {
+  background: #8789bf !important;
+}
+
+#nprogress .bar {
+  background: #8789BF !important;
+}
+
+#nprogress .spinner {
+  display: none !important;
+}
+
+.StripeElement {
+  display: block;
+  margin-bottom: 12px;
+  max-width: 300px;
+  padding: 10px 14px;
+  font-size: 1em;
+  font-family: "Source Code Pro", monospace;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+    rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border: 0;
+  outline: 0;
+  background: white;
+}
+
+.StripeElement--focus {
+  box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px,
+    rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.StripeElement.IdealBankElement,
+.StripeElement.FpxBankElement,
+.StripeElement.PaymentRequestButton {
+  padding: 0;
+}
+
+.StripeElement.PaymentRequestButton {
+  height: 40px;
+}

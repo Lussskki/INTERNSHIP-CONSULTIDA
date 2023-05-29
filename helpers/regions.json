@@ -1,0 +1,32 @@
+[
+  {
+      "id": 4,
+      "slug": "fra",
+      "name": "France",
+      "name_ka": null
+  },
+  {
+      "id": 1,
+      "slug": "geo",
+      "name": "Georgia",
+      "name_ka": "საქართველო"
+  },
+  {
+      "id": 3,
+      "slug": "deu",
+      "name": "Germany",
+      "name_ka": null
+  },
+  {
+      "id": 5,
+      "slug": "rus",
+      "name": "Russia",
+      "name_ka": null
+  },
+  {
+      "id": 2,
+      "slug": "usa",
+      "name": "United States",
+      "name_ka": null
+  }
+]
